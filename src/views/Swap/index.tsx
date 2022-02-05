@@ -74,7 +74,8 @@ export default function Swap({ history }: RouteComponentProps) {
   const { isMobile } = useMatchBreakpoints()
   const [isChartExpanded, setIsChartExpanded] = useState(false)
   const [userChartPreference, setUserChartPreference] = useExchangeChartManager(isMobile)
-  const [isChartDisplayed, setIsChartDisplayed] = useState(userChartPreference)
+  // const [isChartDisplayed, setIsChartDisplayed] = useState(userChartPreference)
+  const [isChartDisplayed, setIsChartDisplayed] = useState(false)
 
   useEffect(() => {
     setUserChartPreference(isChartDisplayed)

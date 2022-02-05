@@ -6,7 +6,7 @@ import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
 const BUSD_MAINNET = mainnetTokens.busd
-const { wbnb: WMATIC } = tokens
+const { wmatic: WMATIC } = tokens
 
 /**
  * Returns the price in BUSD of the input currency
@@ -75,6 +75,6 @@ export const useCakeBusdPrice = (): Price | undefined => {
 }
 
 export const useBNBBusdPrice = (): Price | undefined => {
-  const bnbBusdPrice = useBUSDPrice(tokens.wbnb)
+  const bnbBusdPrice = useBUSDPrice(tokens.wmatic)
   return bnbBusdPrice
 }

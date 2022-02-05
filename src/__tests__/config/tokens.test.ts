@@ -11,7 +11,7 @@ import multicall from 'utils/multicall'
 const tokensToTest = omitBy(
   tokens,
   (token) =>
-    token.symbol.toLowerCase() === 'bnb' ||
+    token.symbol.toLowerCase() === 'matic' ||
     token.symbol.toLowerCase() === 'one' ||
     token.symbol.toLowerCase() === 'hero',
 )

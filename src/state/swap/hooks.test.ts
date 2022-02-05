@@ -15,7 +15,7 @@ describe('hooks', () => {
         ),
       ).toEqual({
         [Field.OUTPUT]: { currencyId: '0x6B175474E89094C44Da98b954EedeAC495271d0F' },
-        [Field.INPUT]: { currencyId: 'BNB' },
+        [Field.INPUT]: { currencyId: 'MATIC' },
         typedValue: '20.5',
         independentField: Field.OUTPUT,
         pairDataById: {},
@@ -27,7 +27,7 @@ describe('hooks', () => {
     test('should return BNB BUSD pair by default', () => {
       expect(queryParametersToSwapState(parse(''))).toEqual({
         [Field.OUTPUT]: { currencyId: DEFAULT_OUTPUT_CURRENCY },
-        [Field.INPUT]: { currencyId: 'BNB' },
+        [Field.INPUT]: { currencyId: 'MATIC' },
         typedValue: '',
         independentField: Field.INPUT,
         pairDataById: {},
@@ -41,7 +41,7 @@ describe('hooks', () => {
         queryParametersToSwapState(parse('?outputCurrency=invalid', { parseArrays: false, ignoreQueryPrefix: true })),
       ).toEqual({
         [Field.INPUT]: { currencyId: '' },
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'MATIC' },
         typedValue: '',
         independentField: Field.INPUT,
         pairDataById: {},
@@ -56,7 +56,7 @@ describe('hooks', () => {
           parse('?outputCurrency=bnb&exactAmount=20.5', { parseArrays: false, ignoreQueryPrefix: true }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'MATIC' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,
@@ -72,7 +72,7 @@ describe('hooks', () => {
           parse('?outputCurrency=BNB&exactAmount=20.5&recipient=abc', { parseArrays: false, ignoreQueryPrefix: true }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'MATIC' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,
@@ -91,7 +91,7 @@ describe('hooks', () => {
           }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'MATIC' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,
@@ -109,7 +109,7 @@ describe('hooks', () => {
           }),
         ),
       ).toEqual({
-        [Field.OUTPUT]: { currencyId: 'BNB' },
+        [Field.OUTPUT]: { currencyId: 'MATIC' },
         [Field.INPUT]: { currencyId: '' },
         typedValue: '20.5',
         independentField: Field.INPUT,

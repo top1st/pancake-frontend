@@ -72,14 +72,14 @@ const ReviewStage: React.FC<ReviewStageProps> = ({
             variant="subtle"
           >
             <ButtonMenuItem>BNB</ButtonMenuItem>
-            <ButtonMenuItem>WBNB</ButtonMenuItem>
+            <ButtonMenuItem>WMATIC</ButtonMenuItem>
           </ButtonMenu>
           <Text small color="textSubtle">
             {t('Total payment')}
           </Text>
           <BnbAmountCell bnbAmount={nftPrice} />
           <Text small color="textSubtle">
-            {t('%symbol% in wallet', { symbol: paymentCurrency === PaymentCurrency.BNB ? 'BNB' : 'WBNB' })}
+            {t('%symbol% in wallet', { symbol: paymentCurrency === PaymentCurrency.BNB ? 'BNB' : 'WMATIC' })}
           </Text>
           {!account ? (
             <Flex justifySelf="flex-end">
@@ -97,14 +97,14 @@ const ReviewStage: React.FC<ReviewStageProps> = ({
           <Message p="8px" variant="danger">
             <Text>
               {t('Not enough %symbol% to purchase this NFT', {
-                symbol: paymentCurrency === PaymentCurrency.BNB ? 'BNB' : 'WBNB',
+                symbol: paymentCurrency === PaymentCurrency.BNB ? 'BNB' : 'WMATIC',
               })}
             </Text>
           </Message>
         )}
         <Flex alignItems="center">
           <Text my="16px" mr="4px">
-            {t('Convert between BNB and WBNB for free')}:
+            {t('Convert between BNB and WMATIC for free')}:
           </Text>
           <Button
             as={Link}
@@ -112,7 +112,7 @@ const ReviewStage: React.FC<ReviewStageProps> = ({
             height="16px"
             external
             variant="text"
-            href="/swap?inputCurrency=BNB&outputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+            href="/swap?inputCurrency=BNB&outputCurrency=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
           >
             {t('Convert')}
           </Button>
@@ -128,7 +128,7 @@ const ReviewStage: React.FC<ReviewStageProps> = ({
           {t('Checkout')}
         </Button>
         <Button as={Link} external style={{ width: '100%' }} href="/swap?outputCurrency=BNB" variant="secondary">
-          {t('Get %symbol1% or %symbol2%', { symbol1: 'BNB', symbol2: 'WBNB' })}
+          {t('Get %symbol1% or %symbol2%', { symbol1: 'BNB', symbol2: 'WMATIC' })}
         </Button>
       </Flex>
     </>

@@ -20,7 +20,7 @@ describe('Info Page', () => {
   })
 
   it('loads single token page', () => {
-    cy.visit('/info/token/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c')
+    cy.visit('/info/token/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270')
     cy.get('#info-token-name-title').should('be.visible')
   })
 })

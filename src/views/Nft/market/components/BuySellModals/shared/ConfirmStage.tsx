@@ -9,7 +9,7 @@ interface ConfirmStageProps {
 
 // Buy Flow:
 // Shown in case user wants to pay with BNB
-// or if user wants to pay with WBNB and it is already approved
+// or if user wants to pay with WMATIC and it is already approved
 // Sell Flow:
 // Shown if user adjusts the price or removes NFT from the market
 const ConfirmStage: React.FC<ConfirmStageProps> = ({ isConfirming, handleConfirm }) => {

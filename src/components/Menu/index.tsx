@@ -7,6 +7,7 @@ import PhishingWarningBanner from 'components/PhishingWarningBanner'
 import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import { usePhishingBannerManager } from 'state/user/hooks'
+import BigNumber from 'bignumber.js'
 import config from './config/config'
 import UserMenu from './UserMenu'
 import GlobalSettings from './GlobalSettings'
@@ -15,7 +16,8 @@ import { footerLinks } from './config/footerConfig'
 
 const Menu = (props) => {
   const { isDark, toggleTheme } = useTheme()
-  const cakePriceUsd = usePriceCakeBusd()
+  // const cakePriceUsd = usePriceCakeBusd()
+  const cakePriceUsd = new BigNumber(0);
   const { currentLanguage, setLanguage, t } = useTranslation()
   const { pathname } = useLocation()
   const [showPhishingWarningBanner] = usePhishingBannerManager()

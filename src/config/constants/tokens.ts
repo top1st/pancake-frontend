@@ -28,7 +28,7 @@ export const mainnetTokens = {
     '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'MintySwap Token',
     'https://pancakeswap.finance/',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
@@ -1871,7 +1871,7 @@ export const testnetTokens = {
     '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'MintySwap Token',
     'https://pancakeswap.finance/',
   ),
   busd: new Token(

@@ -94,7 +94,7 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
+            {/* <Route path="/lottery">
               <Lottery />
             </Route>
             <Route path="/ifo">
@@ -126,7 +126,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/voting/proposal/:id">
               <Proposal />
-            </Route>
+            </Route> */}
 
             {/* NFT */}
             <Route path="/nfts">

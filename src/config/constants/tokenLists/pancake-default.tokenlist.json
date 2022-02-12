@@ -7,7 +7,7 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://matic.mintyswap.com//logo.png",
+  "logoURI": "https://matic.mintyswap.com/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
     {
@@ -25,6 +25,14 @@
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://polygonscan.com/token/images/tether_32.png"
+    },
+    {
+      "name": "$MINTS",
+      "symbol": "$MINTS",
+      "address": "0x687f9936a14407eB08273A910eBdEb98a1B5f5a0",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://matic.mintyswap.com/"
     }
   ]
 }

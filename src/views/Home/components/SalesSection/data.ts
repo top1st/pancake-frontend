@@ -19,7 +19,7 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       { src: 'MATIC', alt: 'BNB token' },
       { src: 'BTC', alt: 'BTC token' },
-      { src: 'CAKE', alt: 'CAKE token' },
+      { src: '$MINTS', alt: '$MINTS token' },
     ],
   },
 }
@@ -49,13 +49,13 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'CAKE makes our world go round.',
+  headingText: '$MINTS makes our world go round.',
   bodyText:
-    'CAKE token is at the heart of the MintySwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    '$MINTS token is at the heart of the MintySwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
-    text: 'Buy CAKE',
+    text: 'Buy $MINTS',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'CAKE token' },
+      { src: 'coin', alt: '$MINTS token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

@@ -12,7 +12,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: '$MINTS',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      137: '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
+      137: '0x687f9936a14407eB08273A910eBdEb98a1B5f5a0',
     },
     token: serializedTokens.syrup,
     quoteToken: serializedTokens.wmatic,

@@ -54,7 +54,7 @@ export const cakeSectionData: SalesSectionProps = {
     '$MINTS token is at the heart of the MintySwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
+    to: '/swap?outputCurrency=0x687f9936a14407eB08273A910eBdEb98a1B5f5a0',
     text: 'Buy $MINTS',
     external: false,
   },

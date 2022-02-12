@@ -25,7 +25,7 @@ export const mainnetTokens = {
   bnb: new Token(MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
   cake: new Token(
     MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0x9307B9bF2ea17AE17ae63c2D4c4135abc3097A85',
     18,
     '$MINTS',
     'MintySwap Token',
@@ -213,7 +213,7 @@ export const mainnetTokens = {
   ),
   syrup: new Token(
     MAINNET,
-    '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+    '0x55980F82Ad6bb72CC9212844547bC5Ae0A237879',
     18,
     'SYRUP',
     'SyrupBar Token',

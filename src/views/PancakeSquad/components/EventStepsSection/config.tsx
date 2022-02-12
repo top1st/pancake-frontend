@@ -57,7 +57,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         <>
           <Button
             as="a"
-            href="https://bsc.mintyswap.com/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+            href="https://bsc.mintyswap.com/swap?outputCurrency=0x9307B9bF2ea17AE17ae63c2D4c4135abc3097A85"
             target="_blank"
             width="100%"
           >

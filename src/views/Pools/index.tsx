@@ -104,7 +104,8 @@ const Pools: React.FC = () => {
     return total.plus(vault.totalCakeInVault)
   }, BIG_ZERO)
 
-  const pools = usePoolsWithVault()
+  // const pools = usePoolsWithVault()
+  const {pools} = usePools();
 
   // TODO aren't arrays in dep array checked just by reference, i.e. it will rerender every time reference changes?
   const [finishedPools, openPools] = useMemo(() => partition(pools, (pool) => pool.isFinished), [pools])

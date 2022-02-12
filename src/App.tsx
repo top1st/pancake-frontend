@@ -86,14 +86,14 @@ const App: React.FC = () => {
             </Route>
             {/* <Route exact path="/farms/auction">
               <FarmAuction />
-            </Route>
+            </Route> */}
             <Route path="/farms">
               <Farms />
             </Route>
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
+            {/* <Route path="/lottery">
               <Lottery />
             </Route>
             <Route path="/ifo">

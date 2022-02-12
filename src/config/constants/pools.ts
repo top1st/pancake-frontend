@@ -6,7 +6,7 @@ const serializedTokens = serializeTokens()
 
 export const vaultPoolConfig = {
   [VaultKey.CakeVault]: {
-    name: 'Auto CAKE',
+    name: 'Auto $MINTS',
     description: 'Automatic restaking',
     autoCompoundFrequency: 5000,
     gasLimit: 380000,
@@ -16,8 +16,8 @@ export const vaultPoolConfig = {
     },
   },
   [VaultKey.IfoPool]: {
-    name: 'IFO CAKE',
-    description: 'Stake CAKE to participate in IFO',
+    name: 'IFO $MINTS',
+    description: 'Stake $MINTS to participate in IFO',
     autoCompoundFrequency: 1,
     gasLimit: 500000,
     tokenImage: {

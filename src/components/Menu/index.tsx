@@ -16,8 +16,7 @@ import { footerLinks } from './config/footerConfig'
 
 const Menu = (props) => {
   const { isDark, toggleTheme } = useTheme()
-  // const cakePriceUsd = usePriceCakeBusd()
-  const cakePriceUsd = new BigNumber(0);
+  const cakePriceUsd = usePriceCakeBusd()
   const { currentLanguage, setLanguage, t } = useTranslation()
   const { pathname } = useLocation()
   const [showPhishingWarningBanner] = usePhishingBannerManager()

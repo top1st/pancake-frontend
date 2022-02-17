@@ -38,10 +38,10 @@ const Page: React.FC<
       <PageMeta />
       <StyledPage $removePadding={removePadding} {...props}>
         {children}
-        <Flex flexGrow={1} />
-        <Box display={['block', null, null, hideFooterOnDesktop ? 'none' : 'block']} width="100%">
-          <Footer />
-        </Box>
+        {/*<Flex flexGrow={1} />*/}
+        {/*<Box display={['block', null, null, hideFooterOnDesktop ? 'none' : 'block']} width="100%">*/}
+        {/*  <Footer />*/}
+        {/*</Box>*/}
       </StyledPage>
     </>
   )

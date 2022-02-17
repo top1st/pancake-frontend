@@ -12,7 +12,8 @@ const Wrapper = styled(Page)`
 const PageLoader: React.FC = () => {
   return (
     <Wrapper>
-      <Spinner />
+      {/* <Spinner /> */}
+      <img src="/images/mobile-logo.png" alt="loader" width="120" />
     </Wrapper>
   )
 }

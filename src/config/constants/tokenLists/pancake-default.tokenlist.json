@@ -25,6 +25,14 @@
       "chainId": 137,
       "decimals": 6,
       "logoURI": "https://polygonscan.com/token/images/tether_32.png"
+    },
+    {
+      "name": "Meta Shard",
+      "symbol": "MShard",
+      "address": "0xb5635Db95312d1906d46345fC1b24a3838AC4a26",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mshard.png"
     }
   ]
 }

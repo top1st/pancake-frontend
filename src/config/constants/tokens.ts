@@ -29,7 +29,7 @@ export const mainnetTokens = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://pancakeswap.finance/',
+    'https://dex.detrix.io/',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   beta: new Token(
@@ -217,7 +217,7 @@ export const mainnetTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'https://dex.detrix.io/',
   ),
   pha: new Token(
     MAINNET,
@@ -1872,7 +1872,7 @@ export const testnetTokens = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://pancakeswap.finance/',
+    'https://dex.detrix.io/',
   ),
   busd: new Token(
     TESTNET,
@@ -1888,7 +1888,7 @@ export const testnetTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'https://dex.detrix.io/',
   ),
   bake: new Token(
     TESTNET,

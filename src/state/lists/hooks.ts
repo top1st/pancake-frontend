@@ -119,7 +119,7 @@ function useCombinedTokenMapFromUrls(urls: string[] | undefined): TokenAddressMa
       urls
         .slice()
         // sort by priority so top priority goes last
-        .sort(sortByListPriority)
+        // .sort(sortByListPriority)
         .reduce((allTokens, currentUrl) => {
           const current = lists[currentUrl]?.current
           if (!current) return allTokens

@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: '$MINTS-MATIC LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      137: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+      137: '0xAECF6F9b889Afc592C85b268FD49075c8f0E4e6a',
     },
     token: serializedTokens.cake,
     quoteToken: serializedTokens.wmatic,
@@ -32,7 +32,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'USDT-MATIC LP',
     lpAddresses: {
       97: '',
-      137: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      137: '0xd939ff24cfc76BeD9d79b79948dD788cB3ACE9d3',
     },
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.wmatic,
@@ -40,7 +40,7 @@ const farms: SerializedFarmConfig[] = [
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
-  
+
 ]
 
 export default farms

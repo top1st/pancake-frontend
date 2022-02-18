@@ -5,7 +5,7 @@ import tokens, { mainnetTokens } from 'config/constants/tokens'
 import { PairState, usePairs } from './usePairs'
 import { wrappedCurrency } from '../utils/wrappedCurrency'
 
-const BUSD_MAINNET = mainnetTokens.busd
+const USDT_MAINNET = mainnetTokens.usdt
 const { wmatic: WMATIC } = tokens
 
 /**
@@ -18,8 +18,8 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
       [chainId && wrapped && currencyEquals(WMATIC, wrapped) ? undefined : currency, chainId ? WMATIC : undefined],
-      [wrapped?.equals(BUSD_MAINNET) ? undefined : wrapped, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
-      [chainId ? WMATIC : undefined, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
+      [wrapped?.equals(USDT_MAINNET) ? undefined : wrapped, chainId === ChainId.MAINNET ? USDT_MAINNET : undefined],
+      [chainId ? WMATIC : undefined, chainId === ChainId.MAINNET ? USDT_MAINNET : undefined],
     ],
     [chainId, currency, wrapped],
   )
@@ -33,13 +33,13 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     if (wrapped.equals(WMATIC)) {
       if (busdPair) {
         const price = busdPair.priceOf(WMATIC)
-        return new Price(currency, BUSD_MAINNET, price.denominator, price.numerator)
+        return new Price(currency, USDT_MAINNET, price.denominator, price.numerator)
       }
       return undefined
     }
     // handle busd
-    if (wrapped.equals(BUSD_MAINNET)) {
-      return new Price(BUSD_MAINNET, BUSD_MAINNET, '1', '1')
+    if (wrapped.equals(USDT_MAINNET)) {
+      return new Price(USDT_MAINNET, USDT_MAINNET, '1', '1')
     }
 
     const ethPairETHAmount = ethPair?.reserveOf(WMATIC)
@@ -51,17 +51,17 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     if (
       busdPairState === PairState.EXISTS &&
       busdPair &&
-      busdPair.reserveOf(BUSD_MAINNET).greaterThan(ethPairETHBUSDValue)
+      busdPair.reserveOf(USDT_MAINNET).greaterThan(ethPairETHBUSDValue)
     ) {
       const price = busdPair.priceOf(wrapped)
-      return new Price(currency, BUSD_MAINNET, price.denominator, price.numerator)
+      return new Price(currency, USDT_MAINNET, price.denominator, price.numerator)
     }
     if (ethPairState === PairState.EXISTS && ethPair && busdEthPairState === PairState.EXISTS && busdEthPair) {
-      if (busdEthPair.reserveOf(BUSD_MAINNET).greaterThan('0') && ethPair.reserveOf(WMATIC).greaterThan('0')) {
-        const ethBusdPrice = busdEthPair.priceOf(BUSD_MAINNET)
+      if (busdEthPair.reserveOf(USDT_MAINNET).greaterThan('0') && ethPair.reserveOf(WMATIC).greaterThan('0')) {
+        const ethBusdPrice = busdEthPair.priceOf(USDT_MAINNET)
         const currencyEthPrice = ethPair.priceOf(WMATIC)
         const busdPrice = ethBusdPrice.multiply(currencyEthPrice).invert()
-        return new Price(currency, BUSD_MAINNET, busdPrice.denominator, busdPrice.numerator)
+        return new Price(currency, USDT_MAINNET, busdPrice.denominator, busdPrice.numerator)
       }
     }
 

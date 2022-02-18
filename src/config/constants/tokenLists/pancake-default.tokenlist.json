@@ -51,12 +51,20 @@
       "logoURI": "https://bsc.mintyswap.com/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"
     },
     {
-      "name": "MintySwap Token",
+      "name": "$MINTS",
       "symbol": "$MINTS",
       "address": "0x9307B9bF2ea17AE17ae63c2D4c4135abc3097A85",
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://bsc.mintyswap.com/images/tokens/0x9307B9bF2ea17AE17ae63c2D4c4135abc3097A85.png"
+    },
+    {
+      "name": "MintySwap",
+      "symbol": "MINTYS",
+      "address": "0x07dAdeC5E79E3E6f16887Cd8d46f970130572700",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "https://bsc.mintyswap.com/images/tokens/0x07dAdeC5E79E3E6f16887Cd8d46f970130572700.png"
     },
     {
       "name": "Venus",

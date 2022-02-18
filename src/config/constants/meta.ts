@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'MintySwap',
   description:
-    'The most popular AMM on BSC by user count! Earn $MINTS through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by MintySwap), NFTs, and more, on a platform you can trust.',
+    'The most popular AMM on BSC by user count! Earn $MINTS through yield farming, then stake it in Syrup Pools to earn more tokens!',
   image: 'https://bsc.mintyswap.com/images/hero.png',
 }
 

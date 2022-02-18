@@ -32,7 +32,23 @@
       "address": "0x687f9936a14407eB08273A910eBdEb98a1B5f5a0",
       "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://matic.mintyswap.com/"
+      "logoURI": "https://matic.mintyswap.com/images/tokens/0x687f9936a14407eB08273A910eBdEb98a1B5f5a0.png"
+    },
+    {
+      "name": "MintySwap",
+      "symbol": "MINTYS",
+      "address": "0xC89BC0e17D6eb5afDa61EEf67a50d70503682093",
+      "chainId": 137,
+      "decimals": 9,
+      "logoURI": "https://matic.mintyswap.com/images/tokens/0xC89BC0e17D6eb5afDa61EEf67a50d70503682093.png"
+    },
+    {
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "chainId": 137,
+      "decimals": 6,
+      "logoURI": "https://polygonscan.com/token/images/centre-usdc_32.png"
     }
   ]
 }

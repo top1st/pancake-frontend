@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://dex.detrix.io",
+  "short_name": "MintySwap",
+  "name": "MintySwap",
+  "description": "Farm $MINTS with Pancake LP Tokens",
+  "homepage_url": "https://bsc.mintyswap.com",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

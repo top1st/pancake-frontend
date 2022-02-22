@@ -1,8 +1,8 @@
 {
-  "short_name": "MintySwap",
-  "name": "MintySwap",
-  "description": "Farm $MINTS with Pancake LP Tokens",
-  "homepage_url": "https://bsc.mintyswap.com",
+  "short_name": "Metaprofitsdao",
+  "name": "Metaprofitsdao",
+  "description": "Farm MByte with Pancake LP Tokens",
+  "homepage_url": "https://pancakeswap.finance",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

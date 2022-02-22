@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "Metaprofitsdao Default List",
   "timestamp": "2021-05-06T00:00:00Z",
   "version": {
     "major": 3,
@@ -40,7 +40,7 @@
       "address": "0xd6473967e52714f26EeDBA1f11296E5051dA85be",
       "chainId": 137,
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mshard.png"
+      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mbyte.png"
     }
   ]
 }

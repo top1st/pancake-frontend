@@ -1,7 +1,7 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
+  "short_name": "Metaprofitsdao",
+  "name": "Metaprofitsdao",
+  "description": "Farm MByte with Pancake LP Tokens",
   "homepage_url": "https://pancakeswap.finance",
   "start_url": ".",
   "display": "standalone",

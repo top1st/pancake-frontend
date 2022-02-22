@@ -19,14 +19,14 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       { src: 'MATIC', alt: 'BNB token' },
       { src: 'BTC', alt: 'BTC token' },
-      { src: 'MByte', alt: 'CAKE token' },
+      { src: 'MByte', alt: 'MByte token' },
     ],
   },
 }
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'PancakeSwap makes it easy to make your crypto work for you.',
+  bodyText: 'Metaprofitsdao makes it easy to make your crypto work for you.',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -49,13 +49,13 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'CAKE makes our world go round.',
+  headingText: 'MByte makes our world go round.',
   bodyText:
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'MByte token is at the heart of the Metaprofitsdao ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0xd6473967e52714f26EeDBA1f11296E5051dA85be',
-    text: 'Buy CAKE',
+    text: 'Buy MByte',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'CAKE token' },
+      { src: 'coin', alt: 'MByte token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

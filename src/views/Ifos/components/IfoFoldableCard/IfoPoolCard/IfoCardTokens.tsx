@@ -127,7 +127,7 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
   const { t } = useTranslation()
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     t(
-      'Sorry, you didn’t contribute enough CAKE to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your CAKE.',
+      'Sorry, you didn’t contribute enough MByte to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your MByte.',
     ),
     { placement: 'bottom' },
   )
@@ -171,8 +171,8 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
           <Box>
             <MessageText as="span" color="#D67E0A">
               {publicIfoData.status === 'finished'
-                ? t('Activate PancakeSwap Profile to take part in next IFO‘s!')
-                : t('You need an active PancakeSwap Profile to take part in an IFO!')}
+                ? t('Activate Metaprofitsdao Profile to take part in next IFO‘s!')
+                : t('You need an active Metaprofitsdao Profile to take part in an IFO!')}
             </MessageText>{' '}
             <MessageText as="a" $isLink color="#D67E0A" href="#ifo-how-to">
               {t('How does it work?')} »
@@ -187,7 +187,7 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
         <Message my="24px" p="8px" variant="danger">
           <Box>
             <MessageText as="span" color="failure">
-              {t('You don’t have any average CAKE balance available to commit in the IFO CAKE pool.')}
+              {t('You don’t have any average MByte balance available to commit in the IFO MByte pool.')}
             </MessageText>{' '}
             <MessageText as="a" $isLink color="failure" fontWeight={700} href="#ifo-how-to">
               {t('How does it work?')} »
@@ -253,13 +253,13 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
           <BunnyPlaceholderIcon width={80} mb="16px" />
           <Text fontWeight={600}>{t('You didn’t participate in this sale!')}</Text>
           <Text textAlign="center" fontSize="14px">
-            {t('To participate in the next IFO, stake some CAKE in the IFO CAKE pool!')}
+            {t('To participate in the next IFO, stake some MByte in the IFO MByte pool!')}
           </Text>
           <MessageText as="a" $isLink href="#ifo-how-to" color="primary" textAlign="center">
             {t('How does it work?')} »
           </MessageText>
           <Button mt="24px" onClick={onPresentStake}>
-            {t('Stake CAKE in IFO pool')}
+            {t('Stake MByte in IFO pool')}
           </Button>
         </Flex>
       ) : (

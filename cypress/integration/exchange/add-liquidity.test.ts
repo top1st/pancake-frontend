@@ -57,8 +57,8 @@ describe('Add Liquidity', () => {
     cy.url().should('contain', '/add/BNB/0xd6473967e52714f26EeDBA1f11296E5051dA85be')
   })
 
-  it('redirects /add/token-BNB to /add/token/BNB', () => {
-    cy.visit('/add/0xd6473967e52714f26EeDBA1f11296E5051dA85be-BNB')
+  it('redirects /add/token-MATIC to /add/token/BNB', () => {
+    cy.visit('/add/0xd6473967e52714f26EeDBA1f11296E5051dA85be-MATIC')
     cy.url().should('contain', '/add/0xd6473967e52714f26EeDBA1f11296E5051dA85be/BNB')
   })
 

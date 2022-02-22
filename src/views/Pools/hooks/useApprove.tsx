@@ -60,7 +60,7 @@ export const useApprovePool = (lpContract: Contract, sousId, earningTokenSymbol)
   return { handleApprove, requestedApproval }
 }
 
-// Approve CAKE auto pool
+// Approve MByte auto pool
 export const useVaultApprove = (vaultKey: VaultKey, setLastUpdated: () => void) => {
   const [requestedApproval, setRequestedApproval] = useState(false)
   const { t } = useTranslation()

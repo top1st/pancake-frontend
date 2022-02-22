@@ -25,9 +25,9 @@ export function deserializeToken(serializedToken: SerializedToken): Token {
 }
 
 export enum GAS_PRICE {
-  default = '5',
-  fast = '6',
-  instant = '7',
+  default = '40',
+  fast = '50',
+  instant = '60',
   testnet = '10',
 }
 

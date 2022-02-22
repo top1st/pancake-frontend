@@ -109,12 +109,12 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
     <CardBody>
       {tooltipVisible && tooltip}
       <Heading as="h4" color="secondary" mb="16px">
-        {t('Stake CAKE in IFO pool')}
+        {t('Stake MByte in IFO pool')}
       </Heading>
       <Box>
         <Text color="textSubtle" small>
           {t(
-            'The maximum amount of CAKE user can commit to all the sales combined, is equal to the average CAKE balance in the IFO CAKE pool prior to the IFO. Stake more CAKE to increase the maximum CAKE you can commit to the sale. Missed this IFO? You can keep staking in the IFO CAKE Pool to join the next IFO sale.',
+            'The maximum amount of MByte user can commit to all the sales combined, is equal to the average MByte balance in the IFO MByte pool prior to the IFO. Stake more MByte to increase the maximum MByte you can commit to the sale. Missed this IFO? You can keep staking in the IFO MByte Pool to join the next IFO sale.',
           )}
         </Text>
         <TooltipText as="span" fontWeight={700} ref={targetRef} color="textSubtle" small>
@@ -128,7 +128,7 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
               <PancakeRoundIcon style={{ alignSelf: 'flex-start' }} width={32} height={32} />
               <Box ml="16px">
                 <Text bold fontSize="12px" textTransform="uppercase" color="secondary">
-                  {t('Your max CAKE entry')}
+                  {t('Your max MByte entry')}
                 </Text>
                 <Balance fontSize="20px" bold decimals={5} value={getBalanceNumber(credit)} />
                 <Text fontSize="12px" color="textSubtle">
@@ -147,7 +147,7 @@ const Step1 = ({ hasProfile }: { hasProfile: boolean }) => {
                 </Text>
               </Box>
             </Flex>
-            <Button onClick={onPresentStake}>{t('Stake')} CAKE</Button>
+            <Button onClick={onPresentStake}>{t('Stake')} MByte</Button>
           </FlexGap>
         </SmallStakePoolCard>
       )}
@@ -160,15 +160,15 @@ const Step2 = ({ hasProfile, isLive, isCommitted }: { hasProfile: boolean; isLiv
   return (
     <CardBody>
       <Heading as="h4" color="secondary" mb="16px">
-        {t('Commit CAKE')}
+        {t('Commit MByte')}
       </Heading>
       <Text color="textSubtle" small>
-        {t('When the IFO sales are live, you can “commit” your CAKE to buy the tokens being sold.')} <br />
+        {t('When the IFO sales are live, you can “commit” your MByte to buy the tokens being sold.')} <br />
         {t('We recommend committing to the Basic Sale first, but you can do both if you like.')}
       </Text>
       {hasProfile && isLive && !isCommitted && (
         <Button as="a" href="#current-ifo" mt="16px">
-          {t('Commit CAKE')}
+          {t('Commit MByte')}
         </Button>
       )}
     </CardBody>
@@ -232,7 +232,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData, isLive }) => {
               {t('Activate your Profile')}
             </Heading>
             <Text color="textSubtle" small mb="16px">
-              {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
+              {t('You’ll need an active Metaprofitsdao Profile to take part in an IFO!')}
             </Text>
             {renderAccountStatus()}
           </CardBody>
@@ -249,7 +249,7 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData, isLive }) => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent CAKE tokens will be returned to your wallet.',
+                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent MByte tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>

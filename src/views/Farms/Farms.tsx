@@ -251,7 +251,7 @@ const Farms: React.FC = () => {
     }
   }, [isIntersecting])
 
-  const rowData = chosenFarmsMemoized.map((farm) => {
+  const rowData = chosenFarmsMemoized.filter(farm=>farm.pid!==2).map((farm) => {
     const { token, quoteToken } = farm
     const tokenAddress = token.address
     const quoteTokenAddress = quoteToken.address
@@ -324,7 +324,7 @@ const Farms: React.FC = () => {
     return (
       <FlexLayout>
         <Route exact path={`${path}`}>
-          {chosenFarmsMemoized.map((farm) => (
+          {chosenFarmsMemoized.filter(farm=>farm.pid!==2).map((farm) => (
             <FarmCard
               key={farm.pid}
               farm={farm}
@@ -336,7 +336,7 @@ const Farms: React.FC = () => {
           ))}
         </Route>
         <Route exact path={`${path}/history`}>
-          {chosenFarmsMemoized.map((farm) => (
+          {chosenFarmsMemoized.filter(farm=>farm.pid!==2).map((farm) => (
             <FarmCard
               key={farm.pid}
               farm={farm}

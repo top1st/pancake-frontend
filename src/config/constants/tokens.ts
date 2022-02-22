@@ -117,19 +117,19 @@ export const mainnetTokens = {
   ),
   usdc: new Token(
     MAINNET,
-    '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
-    18,
+    '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
+    6,
     'USDC',
-    'Binance-Peg USD Coin',
+    'USD Coin (PoS)',
     'https://www.centre.io/usdc',
   ),
-  kalm: new Token(
+  mshard: new Token(
     MAINNET,
-    '0x4BA0057f784858a48fe351445C672FF2a3d43515',
+    '0xb5635Db95312d1906d46345fC1b24a3838AC4a26',
     18,
-    'KALM',
-    'Kalmar Token',
-    'https://kalmar.io/',
+    'MShard',
+    'Meta Shard',
+    'https://metashard.io/',
   ),
   dkt: new Token(
     MAINNET,

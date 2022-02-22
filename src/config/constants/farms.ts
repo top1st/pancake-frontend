@@ -29,13 +29,23 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 2,
-    lpSymbol: 'USDT-MATIC LP',
+    lpSymbol: 'USDC-Mshared LP',
     lpAddresses: {
       97: '',
       137: '0x604229c960e5CACF2aaEAc8Be68Ac07BA9dF81c3',
     },
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.wmatic,
+  },
+  {
+    pid: 3,
+    lpSymbol: 'USDC-MShard LP',
+    lpAddresses: {
+      97: '',
+      137: '0x2dfD0eE777Aa13B0d775B6C1ce7003D0D8A88120',
+    },
+    token: serializedTokens.usdc,
+    quoteToken: serializedTokens.mshard,
   },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)

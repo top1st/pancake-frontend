@@ -41,6 +41,14 @@
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mbyte.png"
+    },
+    {
+      "name": "USD Coin (PoS)",
+      "symbol": "USDC",
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "chainId": 137,
+      "decimals": 6,
+      "logoURI": "https://polygonscan.com/token/images/centre-usdc_32.png"
     }
   ]
 }

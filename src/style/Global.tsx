@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+  .desktop-icon {
+    width: 60px !important;
+  }
 `
 
 export default GlobalStyle

@@ -9,10 +9,10 @@ const farms: SerializedFarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'MByte',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      137: '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a',
+      137: '0xd6473967e52714f26EeDBA1f11296E5051dA85be',
     },
     token: serializedTokens.syrup,
     quoteToken: serializedTokens.wmatic,

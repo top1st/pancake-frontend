@@ -33,6 +33,14 @@
       "chainId": 137,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mshard.png"
+    },
+    {
+      "name": "MetaBytes",
+      "symbol": "MByte",
+      "address": "0xd6473967e52714f26EeDBA1f11296E5051dA85be",
+      "chainId": 137,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/top1st/token-assets/main/png/mshard.png"
     }
   ]
 }

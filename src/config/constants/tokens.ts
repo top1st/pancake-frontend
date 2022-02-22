@@ -29,7 +29,7 @@ export const mainnetTokens = {
     18,
     'MByte',
     'MetaBytes',
-    'https://pancakeswap.finance/',
+    'http://dapp.metaprofitsdao.com//',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   beta: new Token(
@@ -217,7 +217,7 @@ export const mainnetTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'http://dapp.metaprofitsdao.com//',
   ),
   pha: new Token(
     MAINNET,
@@ -838,14 +838,6 @@ export const mainnetTokens = {
     'LTC',
     'Binance-Peg Litecoin Token',
     'https://litecoin.org/',
-  ),
-  ada: new Token(
-    MAINNET,
-    '0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47',
-    18,
-    'ADA',
-    ' Binance-Peg Cardano Token',
-    'https://www.cardano.org/',
   ),
   band: new Token(
     MAINNET,
@@ -1872,7 +1864,7 @@ export const testnetTokens = {
     18,
     'MByte',
     'MetaBytes',
-    'https://pancakeswap.finance/',
+    'http://dapp.metaprofitsdao.com//',
   ),
   busd: new Token(
     TESTNET,
@@ -1888,7 +1880,7 @@ export const testnetTokens = {
     18,
     'SYRUP',
     'SyrupBar Token',
-    'https://pancakeswap.finance/',
+    'http://dapp.metaprofitsdao.com//',
   ),
   bake: new Token(
     TESTNET,

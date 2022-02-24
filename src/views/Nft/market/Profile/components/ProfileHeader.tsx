@@ -81,7 +81,7 @@ const ProfileHeader: React.FC<HeaderProps> = ({
               target="_blank"
               as="a"
               href={getBscScanLink(accountPath, 'address')}
-              alt={t('View BscScan for user address')}
+              alt={t('View Polygonscan for user address')}
             >
               <BscScanIcon width="20px" color="primary" />
             </StyledIconButton>

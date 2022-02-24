@@ -85,62 +85,62 @@ const App: React.FC = () => {
               {/* <Home /> */}
               <Redirect to="/swap" />
             </Route>
-            <Route exact path="/farms/auction">
-              <FarmAuction />
-            </Route>
+            {/*<Route exact path="/farms/auction">*/}
+            {/*  <FarmAuction />*/}
+            {/*</Route>*/}
             <Route path="/farms">
               <Farms />
             </Route>
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
-              <Lottery />
-            </Route>
-            <Route path="/ifo">
-              <Ifos />
-            </Route>
-            <Route exact path="/teams">
-              <Teams />
-            </Route>
-            <Route path="/teams/:id">
-              <Team />
-            </Route>
-            <Route path="/create-profile">
-              <ProfileCreation />
-            </Route>
-            <Route path="/competition">
-              <TradingCompetition />
-            </Route>
-            <Route exact path="/prediction">
-              <Predictions />
-            </Route>
-            <Route path="/prediction/leaderboard">
-              <PredictionsLeaderboard />
-            </Route>
-            <Route exact path="/voting">
-              <Voting />
-            </Route>
-            <Route exact path="/voting/proposal/create">
-              <CreateProposal />
-            </Route>
-            <Route path="/voting/proposal/:id">
-              <Proposal />
-            </Route>
+            {/*<Route path="/lottery">*/}
+            {/*  <Lottery />*/}
+            {/*</Route>*/}
+            {/*<Route path="/ifo">*/}
+            {/*  <Ifos />*/}
+            {/*</Route>*/}
+            {/*<Route exact path="/teams">*/}
+            {/*  <Teams />*/}
+            {/*</Route>*/}
+            {/*<Route path="/teams/:id">*/}
+            {/*  <Team />*/}
+            {/*</Route>*/}
+            {/*<Route path="/create-profile">*/}
+            {/*  <ProfileCreation />*/}
+            {/*</Route>*/}
+            {/*<Route path="/competition">*/}
+            {/*  <TradingCompetition />*/}
+            {/*</Route>*/}
+            {/*<Route exact path="/prediction">*/}
+            {/*  <Predictions />*/}
+            {/*</Route>*/}
+            {/*<Route path="/prediction/leaderboard">*/}
+            {/*  <PredictionsLeaderboard />*/}
+            {/*</Route>*/}
+            {/*<Route exact path="/voting">*/}
+            {/*  <Voting />*/}
+            {/*</Route>*/}
+            {/*<Route exact path="/voting/proposal/create">*/}
+            {/*  <CreateProposal />*/}
+            {/*</Route>*/}
+            {/*<Route path="/voting/proposal/:id">*/}
+            {/*  <Proposal />*/}
+            {/*</Route>*/}
 
             {/* NFT */}
-            <Route path="/nfts">
-              <NftMarket />
-            </Route>
+            {/*<Route path="/nfts">*/}
+            {/*  <NftMarket />*/}
+            {/*</Route>*/}
 
-            <Route path="/pancake-squad">
-              <PancakeSquad />
-            </Route>
+            {/*<Route path="/pancake-squad">*/}
+            {/*  <PancakeSquad />*/}
+            {/*</Route>*/}
 
-            {/* Info pages */}
-            <Route path="/info">
-              <Info />
-            </Route>
+            {/*/!* Info pages *!/*/}
+            {/*<Route path="/info">*/}
+            {/*  <Info />*/}
+            {/*</Route>*/}
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
             <Route exact strict path="/swap" component={Swap} />

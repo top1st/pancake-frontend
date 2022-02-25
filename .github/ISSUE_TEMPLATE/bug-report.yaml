@@ -19,7 +19,7 @@ body:
       multiple: false
       options:
         - Farms
-        - Syrup Pools
+        - Meta Pools
         - Lottery
         - Prediction
         - IFO
@@ -66,8 +66,8 @@ body:
           - **Brower**: N/A
           - **Wallet**: Metamask app
       value: |
-        - Device: 
-        - OS: 
+        - Device:
+        - OS:
         - Browser:
         - Wallet:
       render: markdown

@@ -6,9 +6,9 @@ const config = (t: ContextApi['t']) => {
       title: t('I sold an NFT, where’s my BNB?'),
       description: [
         t(
-          'Trades are settled in WMATIC, which is a wrapped version of BNB used on Binance Smart Chain. That means that when you sell an item, WMATIC is sent to your wallet instead of BNB.',
+          'Trades are settled in WMATIC, which is a wrapped version of MATIC used on Binance Smart Chain. That means that when you sell an item, WMATIC is sent to your wallet instead of BNB.',
         ),
-        t('You can instantly swap your WMATIC for BNB with no trading fees on Metaprofitsdao.'),
+        t('You can instantly swap your WMATIC for MATIC with no trading fees on Metaprofitsdao.'),
       ],
     },
     {

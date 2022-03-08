@@ -5,7 +5,7 @@ describe('Add Liquidity', () => {
     cy.get('#add-liquidity-input-tokenb #pair').should('contain.text', 'BUSD')
   })
 
-  it('loads the BNB and tokens', () => {
+  it('loads the MATIC and tokens', () => {
     cy.visit('/add/BNB/0xd6473967e52714f26EeDBA1f11296E5051dA85be')
     cy.get('#add-liquidity-input-tokena #pair').should('contain.text', 'MATIC')
     cy.get('#add-liquidity-input-tokenb #pair').should('contain.text', 'MByte')
@@ -17,7 +17,7 @@ describe('Add Liquidity', () => {
     cy.get('#add-liquidity-input-tokenb #pair').should('contain.text', 'MByte')
   })
 
-  it('does not crash if BNB is duplicated', () => {
+  it('does not crash if MATIC is duplicated', () => {
     cy.visit('/add/BNB/BNB')
     cy.get('#add-liquidity-input-tokena #pair').should('contain.text', 'MATIC')
     cy.get('#add-liquidity-input-tokenb #pair').should('not.contain.text', 'MATIC')

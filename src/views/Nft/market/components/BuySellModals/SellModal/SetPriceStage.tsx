@@ -50,7 +50,7 @@ const SetPriceStage: React.FC<SetPriceStageProps> = ({
     <>
       <Text>
         {t(
-          'When selling NFTs from this collection, a portion of the BNB paid will be diverted before reaching the seller:',
+          'When selling NFTs from this collection, a portion of the MATIC paid will be diverted before reaching the seller:',
         )}
       </Text>
       {creatorFeeAsNumber > 0 && (
@@ -152,7 +152,7 @@ const SetPriceStage: React.FC<SetPriceStageProps> = ({
             {t('The NFT will be removed from your wallet and put on sale at this price.')}
           </Text>
           <Text small color="textSubtle">
-            {t('Sales are in WMATIC. You can swap WMATIC to BNB 1:1 for free with Metaprofitsdao.')}
+            {t('Sales are in WMATIC. You can swap WMATIC to MATIC 1:1 for free with Metaprofitsdao.')}
           </Text>
         </Box>
       </Grid>

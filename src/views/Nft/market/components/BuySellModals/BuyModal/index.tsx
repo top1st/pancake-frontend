@@ -54,7 +54,7 @@ const BuyModal: React.FC<BuyModalProps> = ({ nftToBuy, onDismiss }) => {
   const nftPriceWei = parseUnits(nftToBuy.marketData.currentAskPrice, 'ether')
   const nftPrice = parseFloat(nftToBuy.marketData.currentAskPrice)
 
-  // BNB - returns ethers.BigNumber
+  // MATIC - returns ethers.BigNumber
   const { balance: bnbBalance, fetchStatus: bnbFetchStatus } = useGetBnbBalance()
   const formattedBnbBalance = parseFloat(formatEther(bnbBalance))
   // WMATIC - returns BigNumber

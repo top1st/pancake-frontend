@@ -24,7 +24,7 @@ describe('hooks', () => {
       })
     })
 
-    test('should return BNB BUSD pair by default', () => {
+    test('should return MATIC BUSD pair by default', () => {
       expect(queryParametersToSwapState(parse(''))).toEqual({
         [Field.OUTPUT]: { currencyId: DEFAULT_OUTPUT_CURRENCY },
         [Field.INPUT]: { currencyId: 'MATIC' },
@@ -36,7 +36,7 @@ describe('hooks', () => {
       })
     })
 
-    test('does not duplicate BNB for invalid output token', () => {
+    test('does not duplicate MATIC for invalid output token', () => {
       expect(
         queryParametersToSwapState(parse('?outputCurrency=invalid', { parseArrays: false, ignoreQueryPrefix: true })),
       ).toEqual({
@@ -50,7 +50,7 @@ describe('hooks', () => {
       })
     })
 
-    test('output BNB only', () => {
+    test('output MATIC only', () => {
       expect(
         queryParametersToSwapState(
           parse('?outputCurrency=bnb&exactAmount=20.5', { parseArrays: false, ignoreQueryPrefix: true }),

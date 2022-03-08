@@ -21,7 +21,7 @@ export const mainnetTokens = {
     'Wrapped Matic',
     'https://www.binance.com/',
   ),
-  // bnb here points to the wmatic contract. Wherever the currency BNB is required, conditional checks for the symbol 'MATIC' can be used
+  // bnb here points to the wmatic contract. Wherever the currency MATIC is required, conditional checks for the symbol 'MATIC' can be used
   bnb: new Token(MAINNET, '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', 18, 'MATIC', 'MATIC', 'https://www.binance.com/'),
   cake: new Token(
     MAINNET,

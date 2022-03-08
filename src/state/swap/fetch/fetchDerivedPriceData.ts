@@ -20,7 +20,7 @@ const getTokenDerivedBnbPrices = async (tokenAddress: string, blocks: Block[]) =
     return null
   }
 
-  // format token BNB price results
+  // format token MATIC price results
   const tokenPrices: {
     tokenAddress: string
     timestamp: string

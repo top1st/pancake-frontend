@@ -104,7 +104,7 @@ const ReviewStage: React.FC<ReviewStageProps> = ({
         )}
         <Flex alignItems="center">
           <Text my="16px" mr="4px">
-            {t('Convert between BNB and WMATIC for free')}:
+            {t('Convert between MATIC and WMATIC for free')}:
           </Text>
           <Button
             as={Link}

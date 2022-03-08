@@ -48,13 +48,13 @@ export default function useWrapCallback(
                   const txReceipt = await callWithGasPrice(wethContract, 'deposit', undefined, {
                     value: `0x${inputAmount.raw.toString(16)}`,
                   })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} BNB to WMATIC` })
+                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} MATIC to WMATIC` })
                 } catch (error) {
                   console.error('Could not deposit', error)
                 }
               }
             : undefined,
-        inputError: sufficientBalance ? undefined : 'Insufficient BNB balance',
+        inputError: sufficientBalance ? undefined : 'Insufficient MATIC Balance',
       }
     }
     if (currencyEquals(WETH[chainId], inputCurrency) && outputCurrency === ETHER) {

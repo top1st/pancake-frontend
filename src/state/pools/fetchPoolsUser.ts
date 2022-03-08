@@ -8,7 +8,7 @@ import { simpleRpcProvider } from 'utils/providers'
 import BigNumber from 'bignumber.js'
 
 // Pool 0, Cake / Cake is a different kind of contract (master chef)
-// BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
+// MATIC pools use the native MATIC token (wrapping ? unwrapping is done at the contract level)
 const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'MATIC')
 const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'MATIC')
 const nonMasterPools = poolsConfig.filter((pool) => pool.sousId !== 0)
@@ -29,7 +29,7 @@ export const fetchPoolsAllowance = async (account) => {
 }
 
 export const fetchUserBalances = async (account) => {
-  // Non BNB pools
+  // Non MATIC pools
   const calls = nonBnbPools.map((pool) => ({
     address: pool.stakingToken.address,
     name: 'balanceOf',
@@ -41,7 +41,7 @@ export const fetchUserBalances = async (account) => {
     {},
   )
 
-  // BNB pools
+  // MATIC pools
   const bnbBalance = await simpleRpcProvider.getBalance(account)
   const bnbBalances = bnbPools.reduce(
     (acc, pool) => ({ ...acc, [pool.sousId]: new BigNumber(bnbBalance.toString()).toJSON() }),

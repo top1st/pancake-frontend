@@ -25,7 +25,7 @@ describe('Remove Liquidity', () => {
     cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'BUSD')
   })
 
-  it('does not crash if BNB is duplicated', () => {
+  it('does not crash if MATIC is duplicated', () => {
     cy.visit('/remove/BNB/BNB')
     cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'MATIC')
     cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'MATIC')

@@ -52,7 +52,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
         eventStatus: [SaleStatusEnum.Pending, SaleStatusEnum.Premint],
       }),
       title: t('Hold MByte'),
-      bodyText: [t('Each NFT costs MByte to mint. Remember you also need BNB to cover transaction fees too!')],
+      bodyText: [t('Each NFT costs MByte to mint. Remember you also need MATIC to cover transaction fees too!')],
       buttons: (
         <>
           <Button

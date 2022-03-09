@@ -113,7 +113,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Pancake LPs',
+      name: 'Uniswap V2',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
